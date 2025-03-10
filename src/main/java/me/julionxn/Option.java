@@ -1,4 +1,4 @@
 package me.julionxn;
 
-public record Option(boolean[] choose, Integer weight, Integer benefit) {
+public record Option(boolean[] choose, Double weight, Double benefit) {
 }

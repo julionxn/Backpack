@@ -7,7 +7,7 @@ import java.util.*;
 
 public class BinarySolver extends Solver {
 
-    public BinarySolver(List<Item> items, int maxCapacity) {
+    public BinarySolver(List<Item> items, double maxCapacity) {
         super(items, maxCapacity);
     }
 
@@ -48,11 +48,11 @@ public class BinarySolver extends Solver {
         return (int) Math.pow(2, b);
     }
 
-    private List<Option> getOptions(List<Item> items, Integer capacity, List<boolean[]> options) {
+    private List<Option> getOptions(List<Item> items, Double capacity, List<boolean[]> options) {
         List<Option> valids = new ArrayList<>();
         for (boolean[] option : options) {
-            int totalWeight = 0;
-            int totalBenefit = 0;
+            double totalWeight = 0;
+            double totalBenefit = 0;
             for (int i = 0; i < option.length; i++) {
                 boolean b = option[i];
                 if (b) {

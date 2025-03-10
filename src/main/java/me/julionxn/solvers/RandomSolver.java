@@ -49,11 +49,11 @@ public class RandomSolver extends Solver {
         return null;
     }
 
-    private List<Option> getOptions(List<Item> items, Integer capacity, List<boolean[]> options) {
+    private List<Option> getOptions(List<Item> items, Double capacity, List<boolean[]> options) {
         List<Option> valids = new ArrayList<>();
         for (boolean[] option : options) {
-            int totalWeight = 0;
-            int totalBenefit = 0;
+            double totalWeight = 0;
+            double totalBenefit = 0;
             for (int i = 0; i < option.length; i++) {
                 boolean b = option[i];
                 if (b) {

@@ -1,4 +1,4 @@
 package me.julionxn;
 
-public record Item(String name, Integer weight, Integer benefit) {
+public record Item(String name, Double weight, Integer benefit) {
 }
